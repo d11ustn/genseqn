@@ -16,7 +16,7 @@ def sample_list(config_path, main_dir, file_extensions):
         raise ValueError("sample_path or project_name not defined in config.yaml.")
 
     # Set output folder for {project_name}_db.txt
-    output_dir = os.path.join(main_dir, "../results")
+    output_dir = os.path.join(main_dir, "results")
     # Create {project_name}_db.txt
     output_path = os.path.join(output_dir, f"{project_name}/{project_name}_db.txt")
 
@@ -83,7 +83,7 @@ def sample_list(config_path, main_dir, file_extensions):
 
 if __name__ == "__main__":
     main_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    config_path = os.path.join(main_dir, "../config/config.yaml")
+    config_path = os.path.join(main_dir, "config/config.yaml")
     file_extensions = [".fastq.gz", ".fastq"]
 
     sample_list(config_path, main_dir, file_extensions)

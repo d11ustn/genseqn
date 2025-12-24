@@ -1,38 +1,17 @@
-# PLEASE READ FIRST: Please set all settings marked with the following character! #{***}
-# Set the path to the folder where your sample folders are located! #{***}
-# The sample folders must have the following structure! 
-# Example: smpl_01/ont/ontfile.fastq.gz; smpl_01/illumina/illuminafile_1.fastq; smpl_01/illumina/illuminafile_2.fastq;
-sample_path: /path/to/datasets/
-# Set the project name for your samples; Example: drosophila_samples; #{***}
-# This will create a subfolder in 'results' with the project name you entered.
-project_name: saccharomycetes_smpls
-# Set save_dict: true to save a JSON file (Dictonary) with your samples!
-save_dict: true
-# Canu; Set genomeSize; genomeSize={params.canu_genome_size}; #{***}
-# Determine the size of your genome!
-canu_genome_size: "12m"
-# Canu; Set minInputCoverage; minInputCoverage={params.canu_minInputCoverage};
-# If you do not enter the minInputCoverage manually, canu will use the default value = 10.
-canu_minInputCoverage: ""
-# Canu; Set stopOnLowCoverage; stopOnLowCoverage={params.canu_stopOnLowCoverage};
-# If you do not enter the stopOnLowCoverage manually, canu will use the default value = 0.
-canu_stopOnLowCoverage: ""
-# Canu; Set useGrid(true/false); useGrid={params.canu_grid};
-# Cluster analyses;
-canu_grid: "false"
-# BUSCO; Set mode; mode=config["busco_mode"];
-# Leave unchanged when analyzing genomes!
-busco_mode: "genome"
-# BUSCO; lineage; extra=config["busco_lineage"]; #{***}
-# For a specific eukaryotic organism; https://busco.ezlab.org/list_of_lineages.html; 
-busco_lineage: "saccharomycetes_odb10"
-# FASTQC; Set memory; 8GB should be used as a minimum! #{***}
-# Example(use of 8GB): fastqc_memory: "8192";
-fastqc_memory: "8192"
-# THIS PART IS IMPORTANT IF YOU ALSO WANT TO USE ILLUMINA DATA!
-# Set illumina_data: true; If you want to use Illumina data!
-# Set illumina_data: false; If you don't want to use Illumina data!
-illumina_data: true
-# Pilon; Set Memory for JAVA heap Space; 32G = 32 Gigabyte; #{***}
-# # 8GB should be used as a minimum! Example(use of 8GB): pilon_memory: "8G";
-pilon_memory: "32G"
+# genseqn; configuration file: config/config.yaml
+
+# General settings
+sample_path: /path/to/dataset/ # Path to folder with sample directories (e.g. smpl_01/ont/ontfile.fastq.gz; smpl_01/illumina/illuminafile_1.fastq; smpl_01/illumina/illuminafile_2.fastq)
+project_name: project_name # Project name for your samples (e.g. drosophila_samples)
+save_dict: true # Save JSON dictionary file with sample information
+illumina_data: true # Enable (true) or disable (false) Illumina data usage
+fastqc_memory: "12000" # FASTQC memory in MB (minimum recommended: 8000)
+pilon_memory: "32G" # Pilon Java heap memory (minimum recommended: 8G)
+
+# Analyse settings
+canu_genome_size: "12m" # Canu genomeSize parameter; determines expected genome size
+canu_minInputCoverage: "" # Canu minInputCoverage; default = 10 if empty
+canu_stopOnLowCoverage: "" # Canu stopOnLowCoverage; default = 0 if empty
+canu_grid: "false" # Canu useGrid (true/false); enable cluster execution
+busco_mode: "genome" # BUSCO mode; leave as "genome" for genome analyses
+busco_lineage: "eukaryota_odb10" # BUSCO lineage dataset (see https://busco.ezlab.org/list_of_lineages.html)

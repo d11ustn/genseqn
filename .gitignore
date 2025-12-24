@@ -1,7 +1,14 @@
+# macOS Finder metadata
 .DS_Store
+# Snakemake working directory (logs, temp files)
+.snakemake
+# Ignore all contents of input_data, but keep the folder itself
+input_data/*
+!input_data/.gitkeep
+# Ignore all generated analysis results
 results/**
+# Miscellaneous generated files and directories
 resources/**
 logs/**
-.snakemake
-.snakemake/**
-install_workflow.tex
+# Python cache files
+workflow/scripts/__pycache__
