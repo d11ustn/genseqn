@@ -280,11 +280,8 @@ snakemake --dag | dot -Tpdf -o dag_project_name.pdf
 
 ## References
 
-- Kim, J., & Kim, C. (2022). Draft genome assembly using long-read sequencing.  
-  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9254108/
-- Köster, J., & Rahmann, S. (2012). Snakemake: A scalable bioinformatics workflow engine. *Bioinformatics*.
-- Anaconda, Inc. (2012). *Conda: Package, dependency and environment management*.  
-  https://docs.conda.io/
-- Van Rossum, G., & Drake, F. L. (2009). *Python 3 Reference Manual*. CreateSpace.
-- R Core Team. (2023). *R: A language and environment for statistical computing*.  
-  https://www.R-project.org/
+- Kim, J., & Kim, C. (2022). A beginner’s guide to assembling a draft genome with long-read sequencing. *STAR Protocols*. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9254108/
+- Köster, J., & Rahmann, S. (2012). Snakemake: A scalable bioinformatics workflow engine. *Bioinformatics*, 28(19), 2520–2522. https://snakemake.readthedocs.io
+- Anaconda, Inc. (2012). *Conda: Package, dependency and environment management for any language.* [https://docs.conda.io](https://docs.conda.io)
+- Van Rossum, G., & Drake, F. L. (2009). *Python 3 Reference Manual.* CreateSpace, Scotts Valley, CA. https://www.python.org
+- R Core Team. (2023). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing, Vienna, Austria. Available at: https://www.R-project.org/
