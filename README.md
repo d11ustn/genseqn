@@ -1,6 +1,8 @@
 # `genseqn`: Long-Read Assembly Pipeline
 
-**genseqn** (from genome and sequence) is a comprehensive and modular Snakemake-based pipeline for the automated analysis of long-read sequencing data. It supports raw data from Oxford Nanopore Technologies (ONT) and also enables hybrid assembly workflows combining ONT and Illumina reads. This workflow is based on the protocol by Jun Kim and Chuna Kim (2022), “A beginner’s guide to assembling a draft genome and analyzing structural variants with long-read sequencing technologies”. 
+**genseqn** (from genome and sequence) is a comprehensive and modular Snakemake-based pipeline for the automated analysis of long-read sequencing data. It supports raw data from Oxford Nanopore Technologies (ONT) and also enables hybrid assembly workflows combining ONT and Illumina reads. This workflow is based on the protocol by Jun Kim and Chuna Kim (2022), “A beginner’s guide to assembling a draft genome and analyzing structural variants with long-read sequencing technologies”.  
+
+Project: **genseqn was developed as part of a university study.**
 
 ## Cite genseqn
 
@@ -278,9 +280,11 @@ snakemake --dag | dot -Tpdf -o dag_project_name.pdf
 
 ## References
 
-- Kim, J., & Kim, C. (2022). *Assembling a draft genome and analyzing structural variants with long-read sequencing*.  
+- Kim, J., & Kim, C. (2022). Draft genome assembly using long-read sequencing.  
   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9254108/
-- Köster, J., & Rahmann, S. (2012). *Snakemake: A scalable bioinformatics workflow engine*. Bioinformatics, 28(19), 2520–2522.
-- Anaconda, Inc. (2012). *Conda: Package, dependency and environment management*. https://docs.conda.io/
+- Köster, J., & Rahmann, S. (2012). Snakemake: A scalable bioinformatics workflow engine. *Bioinformatics*.
+- Anaconda, Inc. (2012). *Conda: Package, dependency and environment management*.  
+  https://docs.conda.io/
 - Van Rossum, G., & Drake, F. L. (2009). *Python 3 Reference Manual*. CreateSpace.
-- R Core Team. (2023). *R: A language and environment for statistical computing*. https://www.R-project.org/
+- R Core Team. (2023). *R: A language and environment for statistical computing*.  
+  https://www.R-project.org/

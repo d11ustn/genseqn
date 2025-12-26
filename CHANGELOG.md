@@ -1,3 +1,5 @@
+#### genseqn; bioinformatics
+
 # Changelog
 This document records all notable changes to the **genseqn** project.    
 Use the **dev** branch for the latest updates and features.
